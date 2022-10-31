@@ -42,20 +42,6 @@ const Navbar = () => {
                 Contact
               </Link>
             </li>
-            <li className="nav-item ms-2">
-              <Link to="/login">
-                  <button className="btn btn-outline-light" type="button">
-                    <strong>Login</strong>
-                  </button>
-              </Link>
-            </li>
-            <li className="nav-item ms-2">
-              <Link to="/register">
-                  <button className="btn btn-outline-light" type="button">
-                    <strong>Register</strong>
-                  </button>
-              </Link>
-            </li>
           </ul>
         </div>
       </div>

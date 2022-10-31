@@ -1,0 +1,35 @@
+.contact {
+    background-color: #3C3C3D;
+}
+
+.h2-contact {
+    color: #fff;
+}
+
+.card-contact {
+  background-color: #282D32;
+  border-radius: 20px;
+  box-sizing: border-box;
+  height: auto;
+  padding: 20px;
+  width: auto;
+  margin-bottom: 36px;
+}
+
+h6 {
+    color:aliceblue;
+    font-weight: 100;
+}
+
+.form-label-contact {
+    color:aliceblue;
+    font-weight: 100;
+}
+
+.submit-contact {
+    background-color: #181532 !important
+}
+
+.submit-contact:hover {
+    background-color: #395490 !important
+}

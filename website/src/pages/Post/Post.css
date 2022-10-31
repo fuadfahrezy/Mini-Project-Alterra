@@ -1,0 +1,25 @@
+.card {
+    margin-bottom: 2rem;
+    margin-right: 3rem;
+    width: 100%;
+
+}
+
+.card-body {
+    color: black;
+    text-decoration: none;
+}
+
+.title-place {
+    font-size: 30px;
+}
+
+.gambar {
+    width: 20rem !important;
+    margin-right: 2rem !important;
+} 
+
+.deskripsi {
+    font-size: medium;
+    text-align: justify;
+}
