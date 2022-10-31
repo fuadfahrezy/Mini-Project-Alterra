@@ -1,0 +1,18 @@
+.imgHeader {
+    background: url(/src/assets/img/Thalu.jpg);
+    background-size: cover;
+    height: 600px;
+}
+
+.content h2 {
+  font-size: 6rem;
+  padding-top: 12rem;
+  color: azure;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.content p {
+  color: azure;
+  font-size: 3rem;
+  font-family: "Courier New", Courier, monospace;
+}
