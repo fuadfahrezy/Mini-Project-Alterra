@@ -2,14 +2,15 @@
     background-color: #212529;
     background-size: cover;
     padding-top: 15px;
-    padding-bottom: 15px;
+    padding-bottom: 150px;
     color: #fff;
 }
 
 .h2-about {
     padding-bottom: 2rem;
     font-size: 5rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:'Times New Roman', Times, serif;
+    margin-top: 3rem;
 }
 
 .img-about {
@@ -19,25 +20,31 @@
 }
 
 .about-text {
-    font-size: 22px;
+    font-size: 25px;
     text-align: justify;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:'Times New Roman', Times, serif;
 }
 
 .teams {
-    background-color: aqua;
+    background: url(/src/assets/img/background2.jpg);
     padding-top: 4rem;
     padding-bottom: 4rem;
 }
 
+.teams h2 {
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
 .card-team {
-    border: aqua;
-    background-color: aqua;
+    border: transparent;
+    background: transparent;
 }
 
 .people {
     width: 15rem;
     margin-left: 90px;
+    border-radius: 20px;
 }
 
 .card-text {

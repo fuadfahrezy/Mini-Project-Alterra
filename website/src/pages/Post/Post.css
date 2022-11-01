@@ -1,8 +1,11 @@
+.post {
+    background: url(/src/assets/img/background2.jpg);
+}
+
 .card {
     margin-bottom: 2rem;
     margin-right: 3rem;
     width: 100%;
-
 }
 
 .card-body {
@@ -17,7 +20,12 @@
 .gambar {
     width: 20rem !important;
     margin-right: 2rem !important;
-} 
+}
+
+.badge {
+    width: 4rem;
+    font-size: large;
+}
 
 .deskripsi {
     font-size: medium;

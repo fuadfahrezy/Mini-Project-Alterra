@@ -1,0 +1,30 @@
+.login {
+    padding-top: 72px;
+    padding-bottom: 72px;
+    background-color: #3C3C3D;
+  }
+  
+  .header-login {
+    padding-bottom: 30px;
+    color: aliceblue;
+  }
+  
+  .card-login {
+    background-color:#282D32;
+    border-radius: 20px;
+    box-sizing: border-box;
+    height: auto;
+    padding: 20px;
+    width: auto;
+    margin-bottom: 36px;
+    padding-bottom: 72px;
+    padding-top: 72px;
+  }
+  
+  .form-label-login {
+    color: aliceblue;
+  }
+  
+  .button-login {
+    margin-top: 36px;
+  }

@@ -29,7 +29,7 @@ const Home = () => {
       <div className="teams">
         <div className="container ">
           <div className="row">
-            <h3 className="text-center pb-5">Here Is Our Teams</h3>
+            <h2 className="text-center pb-5">Here Is Our Teams</h2>
             <div className="col-md-4">
               <div className="card card-team">
                 <img src={sarah} className="card-img-top people" />

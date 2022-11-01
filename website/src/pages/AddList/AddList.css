@@ -1,0 +1,9 @@
+.addlist {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background: url(/src/assets/img/background2.jpg);
+}
+
+.form-label {
+    font-weight: bolder;
+}

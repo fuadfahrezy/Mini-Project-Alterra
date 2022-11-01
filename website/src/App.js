@@ -4,7 +4,7 @@ import "bootstrap/dist/js/bootstrap.min.js";
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Navbar, Footer} from "./components"
-import { Home, Post, Addpost, Contact} from "./pages"
+import { Home, Post, Addlist, Contact, List} from "./pages"
 
 function App() {
   return (
@@ -13,7 +13,8 @@ function App() {
     <Routes>
       <Route path="/" element={<Home/>}></Route>
       <Route path="/post" element={<Post/>}></Route>
-      <Route path="/addpost" element={<Addpost/>}></Route>
+      <Route path="/list" element={<List/>}></Route>
+      <Route path="/addpost" element={<Addlist/>}></Route>
       <Route path="/contact" element={<Contact/>}></Route>
     </Routes>
     <Footer/>

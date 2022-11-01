@@ -1,6 +1,7 @@
 import Home from "./Home/Home";
 import Post from "./Post/Post";
-import Addpost from "./Addpost/Addpost";
+import Addlist from "./AddList/AddList";
 import Contact from "./Contact/Contact";
+import List from "./List/List";
 
-export {Home, Post, Addpost, Contact};
+export {Home, Post, Addlist, Contact, List};

@@ -7,7 +7,7 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
-          <strong className="name">🅼🆈 🆆🅴🅱🆂🅸🆃🅴</strong>
+          <strong className="name">WISATA WEB</strong>
         </Link>
         <button
           className="navbar-toggler"
@@ -28,20 +28,27 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="nav-item ms-2">
-              <Link className="nav-link" to="/post">
-                Post
-              </Link>
-            </li>
-            <li className="nav-item ms-2">
-              <Link className="nav-link" to="/addpost">
-                Add Post
-              </Link>
-            </li>
-            <li className="nav-item ms-2">
               <Link className="nav-link" to="/contact">
                 Contact
               </Link>
             </li>
+            <li className="nav-item ms-2">
+              <Link className="nav-link" to="/post">
+                Place
+              </Link>
+            </li>
+            <li className="nav-item ms-2">
+              <Link className="nav-link" to="/list">
+                List
+              </Link>
+            </li>
+            <li className="nav-item ms-2">
+                <Link to="/addpost">
+                    <button className="btn btn-outline-light" type="button">
+                      <strong>Add List</strong>
+                    </button>
+                </Link>
+              </li>
           </ul>
         </div>
       </div>
