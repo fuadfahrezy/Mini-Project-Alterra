@@ -43,7 +43,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="nav-item ms-2">
-                <Link to="/addpost">
+                <Link to="/addlist">
                     <button className="btn btn-outline-light" type="button">
                       <strong>Add List</strong>
                     </button>

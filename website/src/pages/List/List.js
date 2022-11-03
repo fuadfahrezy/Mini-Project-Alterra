@@ -1,7 +1,15 @@
-import React from 'react'
+import React, {useEffect} from 'react'
+import { useSelector, useDispatch } from 'react-redux';
+import { getLists, listSelectors, deleteLists } from '../../redux/listSlice';
 import { Link } from 'react-router-dom'
 
 const List = () => {
+    const dispatch = useDispatch();
+    const lists = useSelector(listSelectors.selectAll);
+
+    useEffect(() => {
+        dispatch(getLists());
+    }, [dispatch]);
   return (
     <div className="list">
         <div className='container mt-5'>
@@ -19,20 +27,23 @@ const List = () => {
                         </tr>
                     </thead>
                     <tbody>
-
-                        <tr>
-                            <td>1</td>
-                            <td>Jembatan Apera</td>
-                            <td>Indonesia</td>
-                            <td>Palembang</td>
+                        {lists.map((list, index) => (
+                        <tr key={list.id}>
+                            <td>{index + 1}</td>
+                            <td>{list.namaTempat}</td>
+                            <td>{list.negara}</td>
+                            <td>{list.alamat}</td>
                             <td>
-                                <Link to="/post" type="button" className="btn btn-light rounded shadow">Detail</Link>
+                                {/* <img src={list.detail} className="img-fluid" width="100px" /> */}
+                                <Link to={list.detail} type="button" className="btn btn-light rounded shadow">Detail</Link>
                             </td>
                             <td>
-                            <Link to="/edit" type="button" className="btn btn-light rounded shadow mx-2">Edit</Link>
-                            <Link to="/post" type="button" className="btn btn-light rounded shadow mx-2">Detail</Link>
+                                <Link to={`/edit/${list.id}`} className="btn btn-light rounded shadow">Edit</Link>
+                                <button onClick={() => dispatch(deleteLists(list.id))} className="btn btn-light rounded shadow">Delete</button>
                             </td>
                         </tr>
+
+                        ))}
                     </tbody>
                 </table>
             </div>
