@@ -6,8 +6,8 @@ import Swal from "sweetalert2";
 
 const EditList = () => {
   const [namaTempat, setNamaTempat] = useState('');
-  const [negara, setNegara] = useState('');
-  const [alamat, setAlamat] = useState('');
+  const [asal, setAsal] = useState('');
+  const [deskripsi, setDeskripsi] = useState('');
   const [detail, setDetail] = useState('');
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -22,15 +22,15 @@ const EditList = () => {
   useEffect(() => {
     if (list) {
       setNamaTempat(list.namaTempat);
-      setNegara(list.negara);
+      setAsal(list.asal);
       setDetail(list.detail);
-      setAlamat(list.alamat);
+      setDeskripsi(list.deskripsi);
     }
   }, [list]);
 
   const updateHandler = async (e) => {
     e.preventDefault();
-    await dispatch(updateLists({id, namaTempat, negara, alamat, detail}));
+    await dispatch(updateLists({id, namaTempat, asal, deskripsi, detail}));
 
     Swal.fire(
       'Data Berhasil di Update',
@@ -59,15 +59,15 @@ const EditList = () => {
                   />
                 </div>
                 <div className="mt-3">
-                  <label className="form-label">Negara</label>
+                  <label className="form-label">Asal Tempat</label>
                   <input required type="text" 
                   className="form-control"
-                  value={negara}
-                  onChange={(e) => setNegara(e.target.value)}
+                  value={asal}
+                  onChange={(e) => setAsal(e.target.value)}
                   />
                 </div>
                 <div className="mt-3">
-                  <label className="form-label">URL Detail</label>
+                  <label className="form-label">URL</label>
                   <input required type="text" 
                   className="form-control" 
                   value={detail}
@@ -79,8 +79,8 @@ const EditList = () => {
                   <textarea required 
                   className="form-control" 
                   rows="4" 
-                  value={alamat}
-                  onChange={(e) => setAlamat(e.target.value)}
+                  value={deskripsi}
+                  onChange={(e) => setDeskripsi(e.target.value)}
                   />
                 </div>
                 <div className=" d-grid gap-2 my-5">

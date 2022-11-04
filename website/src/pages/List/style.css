@@ -1,0 +1,37 @@
+.list {
+    background: url(../../assets/img/background2.jpg);
+}
+
+.card-place {
+    margin-bottom: 3rem;
+    margin-right: 3rem;
+    width: 100%;
+}
+
+h1 {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.title-place {
+    font-size: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.gambar {
+    width: 25rem !important;
+    margin-right: 2rem !important;
+}
+
+.asal {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.deskripsi {
+    font-size: large;
+    text-align: justify;
+}
+
+.btn {
+    margin-right: 1rem;
+}

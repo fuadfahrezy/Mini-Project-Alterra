@@ -6,21 +6,21 @@ export const getLists = createAsyncThunk("lists/getLists", async() => {
     return response.data;
 });
 
-export const AddLists = createAsyncThunk("lists/AddLists", async({namaTempat, negara, alamat, detail}) => {
+export const AddLists = createAsyncThunk("lists/AddLists", async({namaTempat, asal, deskripsi, detail}) => {
     const response = await axios.post("https://6344d9a639ca915a69f1a747.mockapi.io/v1/lists", {
         namaTempat,
-        negara,
-        alamat,
+        asal,
+        deskripsi,
         detail
     });
     return response.data;
 });
 
-export const updateLists = createAsyncThunk("lists/updateLists", async({id, namaTempat, negara, alamat, detail}) => {
+export const updateLists = createAsyncThunk("lists/updateLists", async({id, namaTempat, asal, deskripsi, detail}) => {
     const response = await axios.put(`https://6344d9a639ca915a69f1a747.mockapi.io/v1/lists/${id}`, {
         namaTempat,
-        negara,
-        alamat,
+        asal,
+        deskripsi,
         detail
     });
     return response.data;
