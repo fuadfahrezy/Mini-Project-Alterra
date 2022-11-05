@@ -32,7 +32,7 @@ const Addlist = () => {
         <div className="row">
           <div className="col-md-3"></div>
           <div className="col-md-6">
-            <h2 className="text-center my-5">ADD LIST</h2>
+            <h2 className="text-center my-5">ADD PLACE</h2>
             <div className="card-add">
               <form onSubmit={addHandler} className="form-add">
                 <div className="mt-3">

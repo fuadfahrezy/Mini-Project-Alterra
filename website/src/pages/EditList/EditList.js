@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { getLists, listSelectors, updateLists } from "../../redux/listSlice";
 import { useParams, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
+import './EditList.css'
 
 const EditList = () => {
   const [namaTempat, setNamaTempat] = useState('');
@@ -47,7 +48,7 @@ const EditList = () => {
         <div className="row">
           <div className="col-md-3"></div>
           <div className="col-md-6">
-            <h2 className="text-center my-5">EDIT LIST</h2>
+            <h2 className="text-center my-5">EDIT PLACE</h2>
             <div className="card-add">
               <form onSubmit={updateHandler} className="form-add">
                 <div className="mt-3">
