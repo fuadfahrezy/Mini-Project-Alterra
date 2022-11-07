@@ -63,7 +63,7 @@ const Addlist = () => {
                   <label className="form-label">Deskripsi</label>
                   <textarea required 
                   className="form-control" 
-                  rows="4" 
+                  rows="6" 
                   value={deskripsi}
                   onChange={(e) => setDeskripsi(e.target.value)}
                   />
