@@ -76,7 +76,7 @@ const EditList = () => {
                   />
                 </div>
                 <div className="mt-3">
-                  <label className="form-label">Alamat</label>
+                  <label className="form-label">Deskripsi</label>
                   <textarea required 
                   className="form-control" 
                   rows="4" 
