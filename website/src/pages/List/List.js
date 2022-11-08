@@ -8,7 +8,6 @@ const List = () => {
   const dispatch = useDispatch();
   const lists = useSelector(listSelectors.selectAll);
   const [search, setSearch] = useState("");
-  console.log(search);
 
   useEffect(() => {
     dispatch(getLists());
@@ -57,38 +56,6 @@ const List = () => {
               </div>
             );
           })}
-          {/* <table className='table text-center'>
-                    <thead>
-                        <tr>
-                            <th>No</th>
-                            <th>Nama Tempat</th>
-                            <th>Negara</th>
-                            <th>Alamat</th>
-                            <th>Detail</th>
-                            <th>Action</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {lists.map((list, index) => (
-                        <tr key={list.id}>
-                            <td>{index + 1}</td>
-                            <td>{list.namaTempat}</td>
-                            <td>{list.negara}</td>
-                            <td>{list.deskripsi}</td>
-                            <td>
-                                img jgn diubah
-                                <img src={list.detail} className="img-fluid" width="100px" />
-                                <Link to={list.detail} type="button" className="btn btn-light rounded shadow">Detail</Link>
-                            </td>
-                            <td>
-                                <Link to={`/edit/${list.id}`} className="btn btn-light rounded shadow">Edit</Link>
-                                <button onClick={() => dispatch(deleteLists(list.id))} className="btn btn-light rounded shadow">Delete</button>
-                            </td>
-                        </tr>
-
-                        ))}
-                    </tbody>
-                </table> */}
         </div>
       </div>
     </div>
