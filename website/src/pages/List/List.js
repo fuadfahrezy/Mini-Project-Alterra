@@ -23,7 +23,7 @@ const List = () => {
           <div className="col-md-8">
           <input className="form-control form-search mb-5"
           type="text" 
-          placeholder="Seach..."
+          placeholder="Search..."
           onChange={(e) => setSearch(e.target.value)} />
           </div>
           <div className="col-md-2"></div>

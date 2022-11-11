@@ -37,7 +37,9 @@ const Addlist = () => {
               <form onSubmit={addHandler} className="form-add">
                 <div className="mt-3">
                   <label className="form-label">Nama Tempat</label>
-                  <input required type="text" 
+                  <input required type="text"
+                  name='namaTempat'
+                  placeholder="Masukkan nama tempat..." 
                   className="form-control" 
                   value={namaTempat}
                   onChange={(e) => setNamaTempat(e.target.value)}
@@ -45,7 +47,9 @@ const Addlist = () => {
                 </div>
                 <div className="mt-3">
                   <label className="form-label">Asal Tempat</label>
-                  <input required type="text" 
+                  <input required type="text"
+                  name='asal'
+                  placeholder="Masukkan asal tempat..."  
                   className="form-control"
                   value={asal}
                   onChange={(e) => setAsal(e.target.value)}
@@ -53,7 +57,9 @@ const Addlist = () => {
                 </div>
                 <div className="mt-3">
                   <label className="form-label">URL</label>
-                  <input required type="text" 
+                  <input required type="text"
+                  name='url'
+                  placeholder="Masukkan url gambar tempat..." 
                   className="form-control" 
                   value={detail}
                   onChange={(e) => setDetail(e.target.value)}
@@ -62,7 +68,9 @@ const Addlist = () => {
                 <div className="mt-3">
                   <label className="form-label">Deskripsi</label>
                   <textarea required 
-                  className="form-control" 
+                  className="form-control"
+                  name='deskripsi'
+                  placeholder="Masukkan deskripsi..." 
                   rows="6" 
                   value={deskripsi}
                   onChange={(e) => setDeskripsi(e.target.value)}
